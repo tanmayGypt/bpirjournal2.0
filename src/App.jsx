@@ -1,138 +1,133 @@
 import "./App.css";
 import React from "react";
 
-import "./navbar";
-
-import "https://code.jquery.com/jquery-3.4.1.min.js";
-import "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js";
-
 function App() {
   return (
     <header>
       <nav>
-        <ul class="navigation-menu">
+        <ul className="navigation-menu">
           <li>
-            <a href="#">Home</a>
+            <a href="google.co.in">Home</a>
           </li>
-          <li class="extends">
-            <a href="#">Products</a>
+          <li className="extends">
+            <a href="google.co.in">Products</a>
             <ul>
-              <li class="extends">
-                <a href="#">Dog Supplies</a>
+              <li className="extends">
+                <a href="google.co.in">Dog Supplies</a>
                 <ul>
                   <li>
-                    <a href="#">Food & Treats</a>
+                    <a href="google.co.in">Food & Treats</a>
                   </li>
                   <li>
-                    <a href="#">Toys</a>
+                    <a href="google.co.in">Toys</a>
                   </li>
                   <li>
-                    <a href="#">Beds & Furniture</a>
+                    <a href="google.co.in">Beds & Furniture</a>
                   </li>
                   <li>
-                    <a href="#">Outdoor Supplies</a>
+                    <a href="google.co.in">Outdoor Supplies</a>
                   </li>
                   <li>
-                    <a href="#">Clothing</a>
+                    <a href="google.co.in">Clothing</a>
                   </li>
                 </ul>
               </li>
 
-              <li class="extends">
-                <a href="#">Cat Supplies</a>
+              <li className="extends">
+                <a href="google.co.in">Cat Supplies</a>
                 <ul>
                   <li>
-                    <a href="#">Food & Treats</a>
+                    <a href="google.co.in">Food & Treats</a>
                   </li>
                   <li>
-                    <a href="#">Toys</a>
+                    <a href="google.co.in">Toys</a>
                   </li>
                   <li>
-                    <a href="#">Beds & Furniture</a>
+                    <a href="google.co.in">Beds & Furniture</a>
                   </li>
                 </ul>
               </li>
 
-              <li class="extends">
-                <a href="#">Bird Supplies</a>
+              <li className="extends">
+                <a href="google.co.in">Bird Supplies</a>
                 <ul>
                   <li>
-                    <a href="#">Food & Treats</a>
+                    <a href="google.co.in">Food & Treats</a>
                   </li>
                   <li>
-                    <a href="#">Toys</a>
+                    <a href="google.co.in">Toys</a>
                   </li>
                   <li>
-                    <a href="#">Furniture</a>
+                    <a href="google.co.in">Furniture</a>
                   </li>
                 </ul>
               </li>
-              <li class="extends">
-                <a href="#">Fish Supplies</a>
+              <li className="extends">
+                <a href="google.co.in">Fish Supplies</a>
                 <ul>
                   <li>
-                    <a href="#">Food</a>
+                    <a href="google.co.in">Food</a>
                   </li>
                   <li>
-                    <a href="#">Aquariums</a>
+                    <a href="google.co.in">Aquariums</a>
                   </li>
                   <li>
-                    <a href="#">Rocks & Decorations</a>
+                    <a href="google.co.in">Rocks & Decorations</a>
                   </li>
                 </ul>
               </li>
             </ul>
           </li>
 
-          <li class="extends">
-            <a href="#">Services</a>
+          <li className="extends">
+            <a href="google.co.in">Services</a>
             <ul>
-              <li class="extends">
-                <a href="#">Grooming</a>
+              <li className="extends">
+                <a href="google.co.in">Grooming</a>
                 <ul>
                   <li>
-                    <a href="#">Coat Care</a>
+                    <a href="google.co.in">Coat Care</a>
                   </li>
                   <li>
-                    <a href="#">Nail Care</a>
+                    <a href="google.co.in">Nail Care</a>
                   </li>
                   <li>
-                    <a href="#">Doggie Deluxe Spa Day</a>
+                    <a href="google.co.in">Doggie Deluxe Spa Day</a>
                   </li>
                 </ul>
               </li>
-              <li class="extends">
-                <a href="#">Boarding</a>
+              <li className="extends">
+                <a href="google.co.in">Boarding</a>
                 <ul>
                   <li>
-                    <a href="#">Short Term Boarding</a>
+                    <a href="google.co.in">Short Term Boarding</a>
                   </li>
                   <li>
-                    <a href="#">Doggie Daycare</a>
+                    <a href="google.co.in">Doggie Daycare</a>
                   </li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li class="extends">
-            <a href="#">Locations & Hours</a>
+          <li className="extends">
+            <a href="google.co.in">Locations & Hours</a>
             <ul>
               <li>
-                <a href="#">North America</a>
+                <a href="google.co.in">North America</a>
               </li>
               <li>
-                <a href="#">Europe</a>
+                <a href="google.co.in">Europe</a>
               </li>
             </ul>
           </li>
-          <li class="extends">
-            <a href="#">About Us</a>
+          <li className="extends">
+            <a href="google.co.in">About Us</a>
             <ul>
               <li>
-                <a href="#">Our Team</a>
+                <a href="google.co.in">Our Team</a>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <a href="google.co.in">Contact Us</a>
               </li>
             </ul>
           </li>
