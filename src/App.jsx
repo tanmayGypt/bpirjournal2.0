@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import ReactDOM from 'react-dom';
+
 
 function App() {
   return (
@@ -11,60 +11,20 @@ function App() {
             <a href="google.co.in">Home</a>
           </li>
           <li className="extends">
-            <a href="google.co.in">Products</a>
+            <a href="google.co.in">Board</a>
             <ul>
               <li className="extends">
-                <a href="google.co.in">Dog Supplies</a>
-                <ul>
+                <a href="google.co.in">Advisory Board</a>
+                
                   <li>
-                    <a href="google.co.in">Food & Treats</a>
+                    <a href="google.co.in">Editorial Board</a>
                   </li>
-                  <li>
-                    <a href="google.co.in">Toys</a>
-                  </li>
-                  <li>
-                    <a href="google.co.in">Beds & Furniture</a>
-                  </li>
-                  <li>
-                    <a href="google.co.in">Outdoor Supplies</a>
-                  </li>
-                  <li>
-                    <a href="google.co.in">Clothing</a>
-                  </li>
-                </ul>
+
+              
               </li>
 
               <li className="extends">
-                <a href="google.co.in">Cat Supplies</a>
-                <ul>
-                  <li>
-                    <a href="google.co.in">Food & Treats</a>
-                  </li>
-                  <li>
-                    <a href="google.co.in">Toys</a>
-                  </li>
-                  <li>
-                    <a href="google.co.in">Beds & Furniture</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li className="extends">
-                <a href="google.co.in">Bird Supplies</a>
-                <ul>
-                  <li>
-                    <a href="google.co.in">Food & Treats</a>
-                  </li>
-                  <li>
-                    <a href="google.co.in">Toys</a>
-                  </li>
-                  <li>
-                    <a href="google.co.in">Furniture</a>
-                  </li>
-                </ul>
-              </li>
-              <li className="extends">
-                <a href="google.co.in">Fish Supplies</a>
+                
                 <ul>
                   <li>
                     <a href="google.co.in">Food</a>
@@ -79,53 +39,45 @@ function App() {
               </li>
             </ul>
           </li>
-
+          <li>
+            <a href="google.co.in">Policy</a>
+          </li>
+          <li>
+            <a href="google.co.in">Issues</a>
+          </li>
           <li className="extends">
             <a href="google.co.in">Services</a>
             <ul>
               <li className="extends">
-                <a href="google.co.in">Grooming</a>
+                <a href="google.co.in">Papers</a>
                 <ul>
                   <li>
-                    <a href="google.co.in">Coat Care</a>
+                    <a href="google.co.in">Call For Paper</a>
                   </li>
                   <li>
-                    <a href="google.co.in">Nail Care</a>
-                  </li>
-                  <li>
-                    <a href="google.co.in">Doggie Deluxe Spa Day</a>
+                    <a href="google.co.in">Paper  Template</a>
                   </li>
                 </ul>
               </li>
               <li className="extends">
-                <a href="google.co.in">Boarding</a>
+                <a href="google.co.in">Peer Review</a>
                 <ul>
                   <li>
-                    <a href="google.co.in">Short Term Boarding</a>
+                    <a href="google.co.in">Peer Review Process</a>
                   </li>
                   <li>
-                    <a href="google.co.in">Doggie Daycare</a>
+                    <a href="google.co.in">Join As Reviewer</a>
                   </li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li className="extends">
-            <a href="google.co.in">Locations & Hours</a>
-            <ul>
-              <li>
-                <a href="google.co.in">North America</a>
-              </li>
-              <li>
-                <a href="google.co.in">Europe</a>
-              </li>
-            </ul>
-          </li>
+         
           <li className="extends">
             <a href="google.co.in">About Us</a>
             <ul>
               <li>
-                <a href="google.co.in">Our Team</a>
+                <a href="google.co.in">FAQ's</a>
               </li>
               <li>
                 <a href="google.co.in">Contact Us</a>
