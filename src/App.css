@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-=======
+
 body {
   font-family: Cursive;
+  color: #0003;
 }
 
 header {
@@ -75,4 +75,3 @@ header nav .navigation-menu li:hover {
 header nav .navigation-menu li:not(:hover) ul {
   display: none;
 }
->>>>>>> 1d834619f3b15495bbd5cf8a3cd9098b7ae8a20a
