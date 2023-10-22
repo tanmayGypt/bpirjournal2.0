@@ -1,57 +1,76 @@
-// function test(){
-//     var tabsNewAnim = $('#navbarSupportedContent');
-//     var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
-//     var activeItemNewAnim = tabsNewAnim.find('.active');
-//     var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
-//     var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
-//     var itemPosNewAnimTop = activeItemNewAnim.position();
-//     var itemPosNewAnimLeft = activeItemNewAnim.position();
-//     document.getElementsByClassName(".hori-selector").css({
-//       "top":itemPosNewAnimTop.top + "px", 
-//       "left":itemPosNewAnimLeft.left + "px",
-//       "height": activeWidthNewAnimHeight + "px",
-//       "width": activeWidthNewAnimWidth + "px"
-//     });
-//     document.getElementById("#navbarSupportedContent").on("click","li",function(e){
-//       document.getElementById('#navbarSupportedContent ul li').removeClass("active");
-//       document.getElementsByClassName(this).addClass('active');
-//       var activeWidthNewAnimHeight = $(this).innerHeight();
-//       var activeWidthNewAnimWidth = $(this).innerWidth();
-//       var itemPosNewAnimTop = $(this).position();
-//       var itemPosNewAnimLeft = $(this).position();
-//       document.getElementsByClassName(".hori-selector").css({
-//         "top":itemPosNewAnimTop.top + "px", 
-//         "left":itemPosNewAnimLeft.left + "px",
-//         "height": activeWidthNewAnimHeight + "px",
-//         "width": activeWidthNewAnimWidth + "px"
-//       });
-//     });
-//   }
-//   $(document).ready(function(){
-//     setTimeout(function(){ test(); });
-//   });
-//   $(window).on('resize', function(){
-//     setTimeout(function(){ test(); }, 500);
-//   });
-//   $(".navbar-toggler").click(function(){
-//     $(".navbar-collapse").slideToggle(300);
-//     setTimeout(function(){ test(); });
-//   });
-  
-  
-  
-//   // --------------add active class-on another-page move----------
-//   jQuery(document).ready(function($){
-//     // Get current path and find target link
-//     var path = window.location.pathname.split("/").pop();
-  
-//     // Account for home page with empty path
-//     if ( path == '' ) {
-//       path = 'index.html';
-//     }
-  
-//     var target = $('#navbarSupportedContent ul li a[href="'+path+'"]');
-//     // Add active class to target link
-//     target.parent().addClass('active');
-//   });
-  
+function test() {
+  var tabsNewAnim = document.querySelector("#navbarSupportedContent");
+  var selectorNewAnim = tabsNewAnim.querySelectorAll("li").length;
+  var activeItemNewAnim = tabsNewAnim.querySelector(".active");
+  var activeWidthNewAnimHeight = activeItemNewAnim.clientHeight;
+  var activeWidthNewAnimWidth = activeItemNewAnim.clientWidth;
+  var itemPosNewAnimTop = activeItemNewAnim.getBoundingClientRect();
+  var itemPosNewAnimLeft = activeItemNewAnim.getBoundingClientRect();
+  document.querySelector(".hori-selector").style.top =
+    itemPosNewAnimTop.top + "px";
+  document.querySelector(".hori-selector").style.left =
+    itemPosNewAnimLeft.left + "px";
+  document.querySelector(".hori-selector").style.height =
+    activeWidthNewAnimHeight + "px";
+  document.querySelector(".hori-selector").style.width =
+    activeWidthNewAnimWidth + "px";
+
+  tabsNewAnim.addEventListener("click", function (e) {
+    var target = e.target;
+    if (target.tagName === "LI") {
+      var liElements = tabsNewAnim.querySelectorAll("li");
+      liElements.forEach(function (li) {
+        li.classList.remove("active");
+      });
+      target.classList.add("active");
+      var activeWidthNewAnimHeight = target.clientHeight;
+      var activeWidthNewAnimWidth = target.clientWidth;
+      var itemPosNewAnimTop = target.getBoundingClientRect();
+      var itemPosNewAnimLeft = target.getBoundingClientRect();
+      document.querySelector(".hori-selector").style.top =
+        itemPosNewAnimTop.top + "px";
+      document.querySelector(".hori-selector").style.left =
+        itemPosNewAnimLeft.left + "px";
+      document.querySelector(".hori-selector").style.height =
+        activeWidthNewAnimHeight + "px";
+      document.querySelector(".hori-selector").style.width =
+        activeWidthNewAnimWidth + "px";
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    test();
+  });
+});
+
+window.addEventListener("resize", function () {
+  setTimeout(function () {
+    test();
+  }, 500);
+});
+
+document
+  .querySelector(".navbar-toggler")
+  .addEventListener("click", function () {
+    var navbarCollapse = document.querySelector(".navbar-collapse");
+    navbarCollapse.style.display =
+      navbarCollapse.style.display === "none" ? "block" : "none";
+    setTimeout(function () {
+      test();
+    });
+  });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var path = window.location.pathname.split("/").pop();
+  if (path === "") {
+    path = "index.html";
+  }
+  var target = document.querySelector(
+    '#navbarSupportedContent ul li a[href="' + path + '"]'
+  );
+  if (target) {
+    target.parentElement.classList.add("active");
+  }
+});
